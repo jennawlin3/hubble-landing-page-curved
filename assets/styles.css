@@ -355,7 +355,13 @@ footer::before {
    gap: 20px;
 }
 
-.newsletter-form form input[type="email"] {
+.input-container {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+}
+
+.input-container input[type="email"] {
    height: 50px;
    border-radius: 5px;
    border: none;
@@ -380,10 +386,16 @@ footer::before {
 .error {
    color: var(--light-red);
    display: flex;
+   position: absolute;
+   top: -30px;
+   right: 0;
 }
 
 .success {
    color: green;
+   position: absolute;
+   top: -30px;
+   right: 0;
 }
 
 .hide {
@@ -616,12 +628,25 @@ footer::before {
       flex-direction: row;
    }
 
-   .newsletter-form form input[type="email"] {
+   .input-container {
+      display: flex;
+      flex-direction: column;
       width: 70%;
+   }
+
+   .input-container input[type="email"] {
+      display: flex;
+      flex-direction: column;
    }
 
    .newsletter-form form input[type="submit"] {
       width: 30%;
+   }
+
+   .error, .success {
+      top: 60px;
+      right: 0;
+      left: 0;
    }
 }
 
