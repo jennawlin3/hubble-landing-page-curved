@@ -472,6 +472,10 @@ footer::before {
       padding: 70px 30px;
    }
 
+   .hero {
+      min-height: 100vh;
+   }
+
    .hero h1 {
       font-size: 3rem;
    }
@@ -526,7 +530,8 @@ footer::before {
    }
 
    .hero img {
-      width: 700px;
+      width: 1000px;
+      object-fit: contain;
    }
 
    .hero p {
@@ -555,7 +560,7 @@ footer::before {
    }
 
    .stat-content h2 {
-      font-size: 4rem;
+      font-size: 8rem;
       font-weight: 600;
    }
 
@@ -649,9 +654,6 @@ footer::before {
       left: 0;
    }
 }
-
-
-
 
 @media screen and (min-width:1300px) {
    .header-container {
