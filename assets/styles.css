@@ -436,6 +436,10 @@ footer::before {
 }
 
 .fa-brands {
+   color: var(--very-pale-blue);
+}
+
+.fa-brands:hover {
    color: #17dfff;
 }
 
