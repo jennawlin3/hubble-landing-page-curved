@@ -12,6 +12,10 @@
     font-size: 16px;
 }
 
+html {
+   overflow-x: hidden;
+}
+
  body {
     width: 100vw;
     display: flex;
@@ -23,6 +27,7 @@
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
+      overflow-x: hidden;
  }
 
  h1, h2, h3, h4 {
@@ -476,8 +481,8 @@ footer::before {
       padding: 70px 30px;
    }
 
-   .hero {
-      min-height: 100vh;
+   main {
+      max-width: 1800px;
    }
 
    .hero h1 {
